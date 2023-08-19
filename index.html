@@ -373,12 +373,9 @@
     
         else if(day.value<=31 && month.value<=12 && year.value<d.getFullYear()){
                
-             if((d.getMonth()+1)==month.value){
-                newYear=d.getFullYear()-year.value;
-                newMonth=d.getMonth()-month.value;
-             }
+            
 
-              else if((d.getMonth()+1)<month.value){
+               if((d.getMonth()+1)<=month.value){
                 newMonth=d.getMonth()+12-(month.value);
                 newYear=d.getFullYear()-year.value-1;
                
